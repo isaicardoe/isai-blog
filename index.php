@@ -5,7 +5,7 @@
     </head>
     <body>
  <?php
-  echo "soy sexy!";
+  echo "soy sexy!"; 
  ?>
     </body>
 </html>
