@@ -4,8 +4,10 @@
   $conection = new mysqli($host, $username, $password);
   
   if($connection->connect_error) {
-      
+      die("Error: " . $connection->connect_error);
   }
   else {
-      echo "Success";
+      echo "Success" . $connection->host_info;
   }
+  
+  $conection->close();
