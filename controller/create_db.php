@@ -19,5 +19,11 @@
     else {
       echo "Database already exists";
     }
+    
+    $query = $connection->query("CREATE TABLE posts {"
+            . "id int(11) NOT NULL AUTO_INCREMENT,"
+            . "title varchart(255) NOT NULL"
+            . "post text NOT NULL,"
+            . "PRIMARY KEY ()");
   
   $connection->close();
