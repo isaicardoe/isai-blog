@@ -5,7 +5,7 @@
     </head>
     <body>
  <?php
-  echo "soy sexy!"; 
+ require_once(__DIR__ . "/controller/create_db.php");
  ?>
     </body>
 </html>
