@@ -14,12 +14,12 @@
   //if it dosnt connect echo that you need to create a data base
       if($query) {
           echo "Successfully created database: " . $database;
-  //
+  //if it does connect to echo successfully created database
       }
   }
     else {
       echo "Database already exists";
-  //
+  //echo database already exists
     }
     
     $query = $connection->query("CREATE TABLE posts {"
@@ -29,4 +29,4 @@
             . "PRIMARY KEY (id)");
   //
   $connection->close();
-  //
+  //stop the connection function here to end
