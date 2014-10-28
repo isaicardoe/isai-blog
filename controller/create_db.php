@@ -24,6 +24,6 @@
             . "id int(11) NOT NULL AUTO_INCREMENT,"
             . "title varchart(255) NOT NULL"
             . "post text NOT NULL,"
-            . "PRIMARY KEY ()");
+            . "PRIMARY KEY (id)");
   
   $connection->close();
