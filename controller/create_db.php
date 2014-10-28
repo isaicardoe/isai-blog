@@ -27,6 +27,6 @@
             . "title varchart(255) NOT NULL"
             . "post text NOT NULL,"
             . "PRIMARY KEY (id)");
-  //
+  //you are creating a table for the connection  
   $connection->close();
   //stop the connection function here to end
