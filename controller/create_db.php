@@ -6,12 +6,12 @@
   if($connection->connect_error) {
       die("Error: " . $connection->connect_error);
   }
-  //
+  //if the connection to the server is not their run to the next function and if it is die and show error
   $exists = $connection->select_db($database);
-  //
+  //if the connetion to the server is connected to the database sever 
   if(!$exists) {
       $query = $connection->query("CREATE DATABASE $database");
-  //  
+  //if it dosnt connect echo that you need to create a data base
       if($query) {
           echo "Successfully created database: " . $database;
   //
