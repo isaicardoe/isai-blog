@@ -26,7 +26,13 @@
             . "id int(11) NOT NULL AUTO_INCREMENT,"
             . "title varchart(255) NOT NULL"
             . "post text NOT NULL,"
-            . "PRIMARY KEY (id)");
+            . "PRIMARY KEY (id)}");
   //you are creating a table for the connection  
+    
+   if ($query) {
+      echo "Succesfully crate table: posts";
+   }
+  //if the table was made to echo this out
+   
   $connection->close();
   //stop the connection function here to end
