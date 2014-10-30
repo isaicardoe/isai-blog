@@ -29,8 +29,9 @@
             . "PRIMARY KEY (id)}");
   //you are creating a table for the connection  
     
-    
-    
+    if($query) {
+        echo "Succesfully create table: posts";
+    }   
   //if the table was made to echo this out
    
   $connection->close();
