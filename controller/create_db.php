@@ -24,7 +24,7 @@
     
     $query = $connection->query("CREATE TABLE posts {"
             . "id int(11) NOT NULL AUTO_INCREMENT,"
-            . "title varchart(255) NOT NULL"
+            . "title varchart(255) NOT NULL,"
             . "post text NOT NULL,"
             . "PRIMARY KEY (id)}");
   //you are creating a table for the connection  
