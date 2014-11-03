@@ -4,7 +4,7 @@
   $connection = new mysqli($host, $username, $password);
   //checking if the host and stuff is their
   if($connection->connect_error) {
-      die("Error: " . $connection->connect_error);
+      die("<p>Error: " . $connection->connect_error . "</p>");
   }
   //if the connection to the server is not their run to the next function and if it is die and show error
   $exists = $connection->select_db($database);
@@ -13,12 +13,12 @@
       $query = $connection->query("CREATE DATABASE $database");
   //if it dosnt connect echo that you need to create a data base
       if($query) {
-          echo "Successfully created database: " . $database;
+          echo "<p>Successfully created database: " . $database . "</p>";
   //if it does connect to echo successfully created database
       }
   }
     else {
-      echo "Database already exists";
+      echo "<p>Database already exists</p>";
   //echo database already exists
     }
     
@@ -30,9 +30,12 @@
   //you are creating a table for the connection  
     
     if($query) {
-        echo "Succesfully create table: posts";
+        echo "<p>Succesfully create table: posts</p>";
     }   
   //if the table was made to echo this out
-   
+    else {
+        echo "<p>$connection->error</p>";  
+    }
+    //if the table wasnt created echo this and which is error
   $connection->close();
   //stop the connection function here to end
