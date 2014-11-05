@@ -1,3 +1,3 @@
 <?php
    $path = "/cardosoi-blog/";
-   //creatin a string and path to the blog
+   //creating a string and path to the blog
