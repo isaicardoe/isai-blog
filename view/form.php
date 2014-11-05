@@ -10,6 +10,6 @@
     <div>
         <label for="post">Post: </label>
         <textarea name="post"></textarea>
-        <!--doing the same thing just like the other one but for post-->
+        <!--doing the same thing just like the other one but for post--> 
     </div>
 </form>
