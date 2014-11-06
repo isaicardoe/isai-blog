@@ -2,3 +2,8 @@ body{
     background-color: blue; 
     color: aqua;
 }
+
+@media (max-width: 320px) {
+    body {background-color: red;
+    }
+}
