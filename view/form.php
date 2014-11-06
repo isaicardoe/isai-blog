@@ -12,4 +12,9 @@
         <textarea name="post"></textarea>
         <!--doing the same thing just like the other one but for post--> 
     </div>
+    
+    <div>
+        <button type="submit">Submit</button>
+        <!--creating a summit button called submit-->
+    </div>
 </form>
