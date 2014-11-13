@@ -1,5 +1,5 @@
 <?php
-  require_once(__DIR__ . "/../model/database.php");
+  require_once(__DIR__ . "/../model/config.php");
   //it is checking if the file exists in the model folder
   $connection = new mysqli($host, $username, $password);
   //checking if the host and stuff is their

@@ -1,6 +1,6 @@
 <?php
-  require_once(__DIR__ . "/../model/database.php");
-  //getting the database php file out of the model folder
+  require_once(__DIR__ . "/../model/config.php");
+  //getting the config php file out of the model folder
  
   $connection = new mysqli($host, $username, $password, $database);
   //getting all the userstuff and saving them in the varibles
