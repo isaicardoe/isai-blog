@@ -14,4 +14,23 @@
       //when you call it again it makes a new instance of a consistant object 
       //makes it a global varible so we can access then whenver
       //you want to
+      public function __construct($host, $username, $password, $database) {
+          $this->host = $host;
+          $this->username = $username;
+          $this->password = $password;
+          $this->database = $database;
+      }
+      //
+      public function openConnection() {
+          
+      } 
+      //
+      public function closeConnection() {
+          
+      }
+      //
+      public function query($string) {
+          
+      }
+      //
   }
