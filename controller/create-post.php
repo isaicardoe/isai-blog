@@ -19,6 +19,3 @@
   else {
       echo "<p>$connection->error</p>";
   }
- 
-  $connection->close();
-  //it stops the connection varble that was running

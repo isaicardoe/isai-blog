@@ -5,4 +5,6 @@
    $username = "root";
    $password = "root";
    $database = "blog_db";
-   //this is all the host information 
+   //this is all the host information
+   
+   $connection = new Database($host, $username, $password, $database);
