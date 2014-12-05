@@ -1,6 +1,10 @@
 <?php
+   require_once(__DIR__ . "/database.php");
+   //
+   
    $path = "/cardosoi-blog/";
    //creating a string and path to the blog
+   
    $host = "localhost";
    $username = "root";
    $password = "root";

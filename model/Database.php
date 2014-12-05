@@ -22,6 +22,32 @@ class Database {
         $this->username = $username;
         $this->password = $password;
         $this->database = $database;
+        
+        $this->connection = new mysqli($host, $username, $password);
+        //checking if the host and stuff is their
+  
+      if($this->connection->connect_error) {
+        die("<p>Error: " . $connection->connect_error . "</p>");
+    }
+      //if the connection to the server is not their run to the next function and if it is die and show error
+  
+      $exists = $this->connection->select_db($database);
+      //if the connetion to the server is connected to the database sever 
+  
+      if(!$exists) {
+        $query = $this->connection->query("CREATE DATABASE $database");
+      //if it dosnt connect echo that you need to create a data base
+      
+      if($query) {
+        echo "<p>Successfully created database: " . $database . "</p>";
+      //if it does connect to echo successfully created database
+                 }
+    }
+      else {
+        echo "<p>Database already exists</p>";
+      //echo database already exists
+    }
+    
     }
 
     //this stores the global varibles and stores then in the varibles assign to them 
